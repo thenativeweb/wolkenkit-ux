@@ -1,0 +1,41 @@
+{
+  "name": "wolkenkit-ux",
+  "version": "0.0.0",
+  "description": "wolkenkit-ux provides UI components for wolkenkit applications.",
+  "contributors": [
+    {
+      "name": "Golo Roden",
+      "email": "golo.roden@thenativeweb.io"
+    },
+    {
+      "name": "Matthias Wagler",
+      "email": "matthias.wagler@thenativeweb.io"
+    }
+  ],
+  "dependencies": {
+    "classnames": "2.2.5",
+    "jss": "9.0.0-pre.3",
+    "jss-preset-default": "3.0.0",
+    "prop-types": "15.5.10",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "react-jss": "7.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-loader": "7.1.2",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "file-loader": "0.11.2",
+    "react-styleguidist": "6.0.20",
+    "roboter": "0.15.4",
+    "roboter-server": "0.15.4",
+    "webpack": "3.5.5",
+    "webpack-dev-server": "2.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thenativeweb/wolkenkit-ux.git"
+  },
+  "license": "AGPL-3.0"
+}
