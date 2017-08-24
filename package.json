@@ -12,6 +12,7 @@
       "email": "matthias.wagler@thenativeweb.io"
     }
   ],
+  "main": "src/index.js",
   "dependencies": {
     "classnames": "2.2.5",
     "jss": "9.0.0-pre.3",
