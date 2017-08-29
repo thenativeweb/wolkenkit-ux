@@ -58,13 +58,13 @@ In order to use icons you need to include `Symbols` at the start of your page. T
   <p><Icon name='nav' type='inline' size='m' /> nav</p>
   <p><Icon name='twitter' type='inline' size='m' /> twitter</p>
 
-  <p><Icon name='cloud-medium' type='inline' size='xl' /> cloud-medium</p>
-  <p><Icon name='cqrs-medium' type='inline' size='xl' /> cqrs-medium</p>
-  <p><Icon name='event-sourcing-medium' type='inline' size='xl' /> event-sourcing-medium</p>
-  <p><Icon name='notebook-medium' type='inline' size='xl' /> notebook-medium</p>
-  <p><Icon name='open-source-medium' type='inline' size='xl' /> open-source-medium</p>
-  <p><Icon name='server-medium' type='inline' size='xl' /> server-medium</p>
-  <p><Icon name='phone-medium' type='inline' size='xl' /> phone-medium</p>
-  <p><Icon name='plus-medium' type='inline' size='xl' /> plus-medium</p>
-  <p><Icon name='stackoverflow-medium' type='inline' size='xl' /> stackoverflow-medium</p>
+  <p><Icon name='cloud-medium' type='inline' size='l' /> cloud-medium</p>
+  <p><Icon name='cqrs-medium' type='inline' size='l' /> cqrs-medium</p>
+  <p><Icon name='event-sourcing-medium' type='inline' size='l' /> event-sourcing-medium</p>
+  <p><Icon name='notebook-medium' type='inline' size='l' /> notebook-medium</p>
+  <p><Icon name='open-source-medium' type='inline' size='l' /> open-source-medium</p>
+  <p><Icon name='server-medium' type='inline' size='l' /> server-medium</p>
+  <p><Icon name='phone-medium' type='inline' size='l' /> phone-medium</p>
+  <p><Icon name='plus-medium' type='inline' size='l' /> plus-medium</p>
+  <p><Icon name='stackoverflow-medium' type='inline' size='l' /> stackoverflow-medium</p>
 </div>

@@ -40,7 +40,7 @@
 @value icon-size-small: 16px;
 @value icon-size-medium: 24px;
 @value icon-size-large: 48px;
-@value icon-size-xlarge: 96px;
+@value icon-size-xlarge: 64px;
 
 /* Z-Index */
 @value zindex-content: 100;
