@@ -1,22 +1,21 @@
 import classNames from 'classnames';
-import injectSheet from 'react-jss';
 import PropTypes from 'prop-types';
 import React from 'react';
-import styles from './styles';
+import styles from './styles.css';
 
-const Hint = ({ classes, children }) => (
-  <span className={ classes.Hint }>
+const Hint = ({ children }) => (
+  <span className={ styles.Hint }>
     { children }
   </span>
 );
 
-const Button = ({ adjust, classes, children, id, onClick, size, type }) => {
-  const buttonClassNames = classNames(classes.Button, {
-    [classes.AdjustFlex]: adjust === 'flex',
-    [classes.AdjustAuto]: adjust === 'auto',
-    [classes.SizeDefault]: size === 'default',
-    [classes.SizeSmall]: size === 'small',
-    [classes.TypeLink]: type === 'link'
+const Button = ({ adjust, children, id, onClick, size, type }) => {
+  const buttonClassNames = classNames(styles.Button, {
+    [styles.AdjustFlex]: adjust === 'flex',
+    [styles.AdjustAuto]: adjust === 'auto',
+    [styles.SizeDefault]: size === 'default',
+    [styles.SizeSmall]: size === 'small',
+    [styles.TypeLink]: type === 'link'
   });
 
   return (
@@ -38,6 +37,6 @@ Button.defaultProps = {
   type: undefined
 };
 
-Button.Hint = injectSheet(styles)(Hint);
+Button.Hint = Hint;
 
-export default injectSheet(styles)(Button);
+export default Button;

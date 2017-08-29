@@ -29,6 +29,21 @@ module.exports = {
         }
       },
       {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              importLoaders: 1,
+              localIdentName: 'wk-[local]--[hash:base64:5]'
+            }
+          },
+          'postcss-loader'
+        ]
+      },
+      {
         test: /\.html$/,
         use: [
           { loader: 'file-loader', options: { name: '[name].[ext]' }}

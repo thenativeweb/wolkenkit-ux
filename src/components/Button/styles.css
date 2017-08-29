@@ -1,0 +1,85 @@
+@value (
+  color-brand-highlight,
+  color-brand-white,
+  color-interaction-focus,
+  components-border-radius-default,
+  font-family-default,
+  font-size-default,
+  font-size-medium
+) from '../../theme.css';
+
+.Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color-brand-highlight;
+  color: color-brand-white;
+  font-family: font-family-default;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: components-border-radius-default;
+  border: 1px solid color-brand-highlight;
+  outline: none;
+
+  &:focus {
+    border: 1px solid color-interaction-focus
+  }
+
+  &:last-child {
+    margin-right: 0
+  }
+}
+
+.AdjustFlex {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
+}
+
+.AdjustAuto {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.SizeDefault {
+  padding: 7px 11px;
+  margin: 16px;
+  margin-left: 0;
+  font-size: font-size-default
+}
+
+.SizeSmall {
+  padding: 7px 11px;
+  font-size: font-size-medium;
+  margin: 0;
+  margin-right: 6px;
+}
+
+.TypeLink {
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 16px;
+  margin: 0;
+  color: color-brand-highlight;
+  background: none;
+  outline: none;
+  border: none;
+
+  &:focus {
+    border: none;
+    text-decoration: underline;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.Hint {
+  opacity: 0.5;
+  font-size: font-size-medium;
+  padding-left: 0.75em;
+}

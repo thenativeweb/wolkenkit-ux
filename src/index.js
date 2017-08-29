@@ -1,11 +1,5 @@
-import addFonts from './addFonts';
-import Brand from './components/branding/Brand';
-import jss from 'jss';
-import preset from 'jss-preset-default';
+import Brand from './components/Brand';
+import setup from './setup';
 import View from './components/View';
 
-addFonts();
-
-jss.setup(preset());
-
-export { Brand, View };
+export { Brand, setup, View };

@@ -1,22 +1,21 @@
 import classNames from 'classnames';
-import injectSheet from 'react-jss';
 import Logo from '../Logo';
 import PropTypes from 'prop-types';
 import React from 'react';
-import styles from './styles';
+import styles from './styles.css';
 
-const Brand = ({ classes, isCollapsed, showLogo, suffix, size }) => {
-  const brandClassNames = classNames(classes.Brand, {
-    [classes.Collapsed]: isCollapsed,
-    [classes.SizeSmall]: size === 'small',
-    [classes.SizeLarge]: size === 'large'
+const Brand = ({ isCollapsed, showLogo, suffix, size }) => {
+  const brandClassNames = classNames(styles.Brand, {
+    [styles.Collapsed]: isCollapsed,
+    [styles.SizeSmall]: size === 'small',
+    [styles.SizeLarge]: size === 'large'
   });
 
   return (
     <div className={ brandClassNames }>
       <Logo isVisible={ showLogo } size={ size } />
-      <div className={ 'typo' }><span>wolken</span>kit</div>
-      <div className={ 'suffix' }>{ suffix }</div>
+      <div className={ styles.typo }><span>wolken</span>kit</div>
+      <div className={ styles.suffix }>{ suffix }</div>
     </div>
   );
 };
@@ -34,4 +33,4 @@ Brand.defaultProps = {
   suffix: undefined
 };
 
-export default injectSheet(styles)(Brand);
+export default Brand;

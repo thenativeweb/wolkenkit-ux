@@ -1,0 +1,54 @@
+@value (
+  font-family-default
+) from '../../theme.css';
+
+.View {
+  position: relative;
+  font-family: font-family-default;
+}
+
+.AdjustFlex {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
+
+.AdjustAuto {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.OrientationCentered {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.OrientationHorizontal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.OrientationVertical {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.AlignItemsCenter {
+  align-items: center;
+}
+
+.JustifyContentCenter {
+  justify-content: center;
+}

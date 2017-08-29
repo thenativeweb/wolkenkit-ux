@@ -1,0 +1,72 @@
+@value (
+  color-brand-white,
+  color-brand-grey,
+  color-brand-highlight,
+  device-tablet,
+  font-family-headline,
+  font-size-large,
+  font-size-medium,
+  font-size-xlarge
+) from '../../theme.css';
+
+.Brand {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  font-family: font-family-headline;
+  background: color-brand-grey;
+
+  & .typo {
+    font-weight: 500;
+    color: color-brand-highlight;
+
+    & span {
+      color: color-brand-white;
+    }
+  }
+
+  & .suffix {
+    text-align: 'center';
+    color: color-brand-white;
+  }
+}
+
+.Collapsed {
+  & * {
+    animation: none;
+  }
+}
+
+.SizeLarge {
+  & .typo {
+    font-size: font-size-xlarge;
+  }
+
+  & .suffix {
+    font-size: font-size-large
+  }
+}
+
+.SizeSmall {
+  & .typo {
+    font-size: font-size-medium;
+  }
+
+  & .suffix {
+    font-size: font-size-medium
+  }
+}
+
+@media only screen and (max-width: device-tablet) {
+  .SizeLarge {
+    & .typo {
+      font-size: font-size-large;
+    }
+
+    & .suffix {
+      font-size: font-size-medium
+    }
+  }
+}

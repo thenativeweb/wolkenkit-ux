@@ -1,0 +1,55 @@
+@value (
+  color-brand-grey,
+  device-tablet
+) from '../../theme.css';
+
+@keyframes move-cloud {
+  0% { transform: translate3d(0px, 0, 0) }
+  50% { transform: translate3d(83px, 5px, 0) }
+  100% { transform: translate3d(166px, 0, 0) }
+}
+
+.Logo {
+  & .box {
+    fill: color-brand-grey;
+  }
+
+  & .movingCloud1 {
+    animation-name: move-cloud;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    opacity: 0.9;
+    transform: translate3d(0, 0, 0);
+    willChange: transform;
+  }
+
+  & .movingCloud2 {
+    animation-name: move-cloud;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    opacity: 0.95;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+  }
+}
+
+.SizeSmall {
+  width: 64px;
+  height: 64px;
+}
+
+.SizeLarge {
+  width: 220px;
+  height: 220px;
+}
+
+@media only screen and (max-width: device-tablet) {
+  .SizeLarge {
+    width: 100px;
+    height: 100px;
+  }
+}

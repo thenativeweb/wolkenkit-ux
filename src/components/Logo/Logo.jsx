@@ -1,20 +1,19 @@
 import classNames from 'classnames';
-import injectSheet from 'react-jss';
 import PropTypes from 'prop-types';
 import React from 'react';
-import styles from './styles';
+import styles from './styles.css';
 
 /**
  * The wolkenkit logo.
  */
-const Logo = ({ classes, isVisible, size }) => {
+const Logo = ({ isVisible, size }) => {
   if (!isVisible) {
     return null;
   }
 
-  const logoClassNames = classNames(classes.Logo, {
-    [classes.SizeSmall]: size === 'small',
-    [classes.SizeLarge]: size === 'large'
+  const logoClassNames = classNames(styles.Logo, {
+    [styles.SizeSmall]: size === 'small',
+    [styles.SizeLarge]: size === 'large'
   });
 
   return (
@@ -59,7 +58,7 @@ const Logo = ({ classes, isVisible, size }) => {
           clipPath='url(#hexa-mask)'
         >
           <path
-            className='cloud-nr9'
+            className={ styles.movingCloud1 }
             fill='#FFFFFF'
             d='M152.434,145.188c-0.771-0.078-1.485-0.129-2.279-0.129c-6.711,0-12.703,2.877-16.93,7.444
             c-2.572-2.854-6.246-4.675-10.354-4.675c-1.571,0-3.069,0.271-4.483,0.747c-1.994-10.748-11.396-18.89-22.721-18.89
@@ -72,7 +71,7 @@ const Logo = ({ classes, isVisible, size }) => {
             C178.667,124.333,155.334,132.667,152.434,145.188z'
           />
           <path
-            className='cloud-nr10'
+            className={ styles.movingCloud2 }
             fill='#FFFFFF'
             d='M152.434,155.188c-0.771-0.078-1.485-0.129-2.279-0.129c-6.711,0-12.703,2.877-16.93,7.444
             c-2.572-2.854-6.246-4.675-10.354-4.675c-1.571,0-3.069,0.271-4.483,0.747c-1.994-10.748-11.396-18.89-22.722-18.89
@@ -100,4 +99,4 @@ Logo.defaultProps = {
   size: 'large'
 };
 
-export default injectSheet(styles)(Logo);
+export default Logo;

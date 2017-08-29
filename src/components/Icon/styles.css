@@ -1,0 +1,78 @@
+@value (
+  color-brand-grey,
+  color-brand-highlight,
+  icon-size-large,
+  icon-size-medium,
+  icon-size-small,
+  icon-size-xlarge,
+  icon-size-xsmall
+) from '../../theme.css';
+
+
+.Icon {
+  @nest a & {
+    fill: currentColor;
+  }
+}
+
+.ColorDefault {
+  fill: color-brand-grey;
+}
+
+.ColorHighlight {
+  fill: color-brand-highlight;
+}
+
+.SizeXS {
+  width: icon-size-xsmall;
+  height: icon-size-xsmall;
+}
+
+.SizeS {
+  width: icon-size-small;
+  height: icon-size-small;
+}
+
+.SizeM {
+  width: icon-size-medium;
+  height: icon-size-medium;
+}
+
+.SizeL {
+  width: icon-size-large;
+  height: icon-size-large;
+}
+
+.SizeXL {
+  width: icon-size-xlarge;
+  height: icon-size-xlarge;
+}
+
+.TypeInline {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0.175em;
+  margin-left: 0.05em;
+}
+
+/*
+TypeInline.SizeS {
+  width: 0.9em !important;
+  height: 0.9em !important;
+}
+
+TypeInline.SizeL {
+  width: 1.2em !important;
+  height: 1.2em !important;
+}
+
+.TypeInline.SizeXL {
+  width: 2.4em !important;
+  height: 2.4em !important;
+}*/
+
+.TypeFlexAuto {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}

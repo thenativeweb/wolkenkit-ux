@@ -1,0 +1,39 @@
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
+import React from 'react';
+import styles from './styles.css';
+
+const Icon = ({ color, name, size, type }) => {
+  const iconClassNames = classNames(styles.Icon, {
+    [styles.ColorDefault]: color === 'default',
+    [styles.ColorHighlight]: color === 'highlight',
+    [styles.TypeInline]: type === 'inline',
+    [styles.TypeFlexAuto]: type === 'flex-auto',
+    [styles.SizeXS]: size === 'xs',
+    [styles.SizeS]: size === 's',
+    [styles.SizeM]: size === 'm',
+    [styles.SizeL]: size === 'l',
+    [styles.SizeXL]: size === 'xl'
+  });
+
+  return (
+    <svg xmlns='http://www.w3.org/2000/svg' className={ iconClassNames }>
+      <use xlinkHref={ `#icon-${name}` } />
+    </svg>
+  );
+};
+
+Icon.propTypes = {
+  name: PropTypes.string.isRequired,
+  color: PropTypes.oneOf([ 'default', 'highlight' ]),
+  size: PropTypes.oneOf([ 'xs', 's', 'm', 'l', 'xl' ]),
+  type: PropTypes.oneOf([ 'default', 'inline', 'flex-auto' ])
+};
+
+Icon.defaultProps = {
+  size: 's',
+  color: 'default',
+  type: 'default'
+};
+
+export default Icon;
