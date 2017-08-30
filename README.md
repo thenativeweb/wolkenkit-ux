@@ -22,7 +22,7 @@ import { Brand } from 'wolkenkit-ux';
 While developing the client you want to get feedback as quick as possible if the client still runs in current browsers. Therefore you can run the following command.
 
 ```bash
-$ npx styleguidist server
+$ bot styleguide
 ```
 
 This will start a wolkenkit UX styleguide. Point your browser to http://localhost:6060.

@@ -12,5 +12,10 @@ roboter.
       ],
       rules: '.eslintrc.json'
     });
+
+    task('universal/shell', {
+      styleguide: [ './node_modules/.bin/styleguidist server' ],
+      build: [ 'NODE_ENV=production ./node_modules/.bin/webpack' ]
+    });
   }).
   start();
