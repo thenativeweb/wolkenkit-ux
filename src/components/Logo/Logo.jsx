@@ -12,8 +12,8 @@ const Logo = ({ isVisible, size }) => {
   }
 
   const logoClassNames = classNames(styles.Logo, {
-    [styles.SizeSmall]: size === 'small',
-    [styles.SizeLarge]: size === 'large'
+    [styles.SizeS]: size === 's',
+    [styles.SizeL]: size === 'l'
   });
 
   return (
@@ -91,12 +91,12 @@ const Logo = ({ isVisible, size }) => {
 
 Logo.propTypes = {
   isVisible: PropTypes.bool,
-  size: PropTypes.oneOf([ 'small', 'large' ])
+  size: PropTypes.oneOf([ 's', 'l' ])
 };
 
 Logo.defaultProps = {
   isVisible: true,
-  size: 'large'
+  size: 'l'
 };
 
 export default Logo;

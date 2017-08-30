@@ -14,7 +14,7 @@ const Button = ({ adjust, children, id, onClick, size, type }) => {
     [styles.AdjustFlex]: adjust === 'flex',
     [styles.AdjustAuto]: adjust === 'auto',
     [styles.SizeDefault]: size === 'default',
-    [styles.SizeSmall]: size === 'small',
+    [styles.SizeS]: size === 's',
     [styles.TypeLink]: type === 'link'
   });
 
@@ -27,7 +27,7 @@ const Button = ({ adjust, children, id, onClick, size, type }) => {
 
 Button.propTypes = {
   adjust: PropTypes.oneOf([ 'flex', 'auto' ]),
-  size: PropTypes.oneOf([ 'small', 'default' ]),
+  size: PropTypes.oneOf([ 'default', 's' ]),
   type: PropTypes.oneOf([ 'link' ])
 };
 

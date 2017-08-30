@@ -4,32 +4,34 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import styles from './styles.css';
 
-const Brand = ({ isCollapsed, showLogo, suffix, size }) => {
+const Brand = ({ isCollapsed, showLogo, showWordMark, suffix, size }) => {
   const brandClassNames = classNames(styles.Brand, {
     [styles.Collapsed]: isCollapsed,
-    [styles.SizeSmall]: size === 'small',
-    [styles.SizeLarge]: size === 'large'
+    [styles.SizeS]: size === 's',
+    [styles.SizeL]: size === 'l'
   });
 
   return (
     <div className={ brandClassNames }>
       <Logo isVisible={ showLogo } size={ size } />
-      <div className={ styles.typo }><span>wolken</span>kit</div>
-      <div className={ styles.suffix }>{ suffix }</div>
+      { showWordMark ? <div className={ styles.Words }><span>wolken</span>kit</div> : null }
+      <div className={ styles.Suffix }>{ suffix }</div>
     </div>
   );
 };
 
 Brand.propTypes = {
   showLogo: PropTypes.bool,
-  size: PropTypes.oneOf([ 'small', 'large' ]),
-  /** A suffix that will be added below the typo. */
+  showWordMark: PropTypes.bool,
+  size: PropTypes.oneOf([ 's', 'l' ]),
+  /** A suffix that will be added below the Words. */
   suffix: PropTypes.string
 };
 
 Brand.defaultProps = {
   showLogo: true,
-  size: 'large',
+  showWordMark: true,
+  size: 'l',
   suffix: undefined
 };
 

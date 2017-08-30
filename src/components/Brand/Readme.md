@@ -12,6 +12,11 @@ Use this component to display the wolkenkit brand in pages an applications. The 
 <Brand showLogo={ false } />
 ```
 
+
 ```js
-<Brand size='small' />
+<Brand showWordMark={ false } />
+```
+
+```js
+<Brand size='s' />
 ```

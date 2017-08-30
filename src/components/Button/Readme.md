@@ -20,7 +20,7 @@ Use this component to display the wolkenkit brand in applications or pages. The 
 
 ```js
 <div style={{ display: 'flex', alignItems: 'center' }}>
-  <Button size='small'>Small Button</Button>
+  <Button size='s'>Small Button</Button>
   <Button>Default Button</Button>
 </div>
 ```

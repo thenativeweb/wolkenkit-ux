@@ -55,22 +55,6 @@
   margin-left: 0.05em;
 }
 
-/*
-TypeInline.SizeS {
-  width: 0.9em !important;
-  height: 0.9em !important;
-}
-
-TypeInline.SizeL {
-  width: 1.2em !important;
-  height: 1.2em !important;
-}
-
-.TypeInline.SizeXL {
-  width: 2.4em !important;
-  height: 2.4em !important;
-}*/
-
 .TypeFlexAuto {
   flex-grow: 0;
   flex-shrink: 0;

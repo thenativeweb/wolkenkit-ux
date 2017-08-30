@@ -37,18 +37,18 @@
   }
 }
 
-.SizeSmall {
+.SizeS {
   width: 64px;
   height: 64px;
 }
 
-.SizeLarge {
+.SizeL {
   width: 220px;
   height: 220px;
 }
 
 @media only screen and (max-width: device-tablet) {
-  .SizeLarge {
+  .SizeL {
     width: 100px;
     height: 100px;
   }
