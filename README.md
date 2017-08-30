@@ -2,30 +2,21 @@
 
 wolkenkit-ux provides UI components for wolkenkit applications.
 
-
 ## Installation
 
 ```shell
-$ npm install git+ssh://git@github.com:thenativeweb/wolkenkit-ux.git
+$ npm install wolkenkit-ux
 ```
 
-## Using components
+## Quick start
 
-In order to use components in your React applications import them into your project
+To run the styleguide execute the following command:
 
-```js
-import { Brand } from 'wolkenkit-ux';
-```
-
-## Running the styleguide
-
-While developing the client you want to get feedback as quick as possible if the client still runs in current browsers. Therefore you can run the following command.
-
-```bash
+```shell
 $ bot styleguide
 ```
 
-This will start a wolkenkit UX styleguide. Point your browser to http://localhost:6060.
+Once the wolkenkit UX styleguide has been started, point your browser to `http://localhost:6060`.
 
 ## License
 
