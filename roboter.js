@@ -1,7 +1,7 @@
 const roboter = require('roboter');
 
 roboter.
-  workOn('client').
+  workOn('server').
   equipWith(task => {
     task('universal/analyze', {
       src: [
