@@ -1,0 +1,54 @@
+:root {
+  /* Colors */
+  --color-brand-grey: #2f333b;
+  --color-brand-highlight: #29abe2;
+  --color-brand-dark-grey: #363D45;
+  --color-brand-mid-grey: #eee;
+  --color-brand-light-grey: #f7f7f7;
+  --color-brand-white: #fff;
+
+  --color-content-background: var(--color-brand-white);
+  --color-content-panel-light: var(--color-brand-light-grey);
+  --color-content-panel-dark: var(--color-brand-dark-grey);
+  --color-content-border: var(--color-brand-mid-grey);
+  --color-copy-text: #232323;
+  --color-interaction-focus: var(--color-brand-dark-grey);
+
+  /* Typo */
+  --font-size-medium: 14px;
+  --font-size-default: 16px;
+  --font-size-large: 18px;
+  --font-size-xlarge: 26px;
+  --font-size-code: 15px;
+  --font-size-copytext: 18px;
+
+  --font-family-default: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  --font-family-headline: "Ubuntu", sans-serif;
+  --font-family-code: "Ubuntu Mono", monospace !important;
+
+  /* Grid */
+  --grid-step-size: 10px;
+
+  /* Devices and media queries */
+  @custom-media --device-phone (max-width: 544px);
+  @custom-media --device-tablet  (max-width: 768px);
+  @custom-media --device-desktop (max-width: 992px);
+  @custom-media --device-large-desktop (max-width: 1200px);
+
+  /* Components */
+  --components-border-radius-default: 1px;
+  --icon-size-xsmall: 14px;
+  --icon-size-small: 16px;
+  --icon-size-medium: 24px;
+  --icon-size-large: 48px;
+  --icon-size-xlarge: 64px;
+
+  /* Z-Index */
+  --zindex-content: 100;
+  --zindex-content-overlay: 200;
+  --zindex-navigation: 1000;
+  --zindex-menu: 2000;
+  --zindex-modal: 3000;
+  --zindex-overlay: 4000;
+  --zindex-transfer: 5000;
+}

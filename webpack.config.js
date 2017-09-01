@@ -1,6 +1,11 @@
 const path = require('path');
 
-module.exports = {
+const processenv = require('processenv'),
+      webpack = require('webpack');
+
+const isProductionMode = processenv('NODE_ENV') === 'production';
+
+const configuration = {
   devtool: 'eval',
   context: path.join(__dirname, 'test'),
   devServer: {
@@ -8,6 +13,7 @@ module.exports = {
     compress: true,
     port: 8080
   },
+  target: 'web',
   entry: [
     './index.jsx',
     './index.html'
@@ -52,3 +58,16 @@ module.exports = {
     ]
   }
 };
+
+if (isProductionMode) {
+  configuration.plugins = [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production')
+    }),
+    new webpack.optimize.UglifyJsPlugin()
+  ];
+
+  configuration.devtool = undefined;
+}
+
+module.exports = configuration;

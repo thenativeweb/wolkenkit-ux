@@ -6,11 +6,10 @@ ReactDom.render(
   <div>
     <section>
       <h2>Brand</h2>
-      <h3>default</h3>
       <Brand suffix='Documentation' />
-      <h3>size: small</h3>
-      <Brand suffix='console' size='small' />
-      <h3>Brand showLogo: false</h3>
+      <h3>size: s</h3>
+      <Brand suffix='console' size='s' />
+      <h3>showLogo: false</h3>
       <Brand showLogo={ false } />
     </section>
   </div>

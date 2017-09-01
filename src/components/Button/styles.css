@@ -1,30 +1,22 @@
-@value (
-  color-brand-highlight,
-  color-brand-white,
-  color-interaction-focus,
-  components-border-radius-default,
-  font-family-default,
-  font-size-default,
-  font-size-medium
-) from '../../theme.css';
+@import '../../variables.css';
 
 .Button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: color-brand-highlight;
-  color: color-brand-white;
-  font-family: font-family-default;
+  background: var(--color-brand-highlight);
+  color: var(--color-brand-white);
+  font-family: var(--font-family-default);
   cursor: pointer;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: components-border-radius-default;
-  border: 1px solid color-brand-highlight;
+  border-radius: var(--components-border-radius-default);
+  border: 1px solid var(--color-brand-highlight);
   outline: none;
 
   &:focus {
-    border: 1px solid color-interaction-focus
+    border: 1px solid var(--color-interaction-focus);
   }
 
   &:last-child {
@@ -47,12 +39,12 @@
   padding: 7px 11px;
   margin: 16px;
   margin-left: 0;
-  font-size: font-size-default
+  font-size: var(--font-size-default);
 }
 
 .SizeS {
   padding: 7px 11px;
-  font-size: font-size-medium;
+  font-size: var(--font-size-medium);
   margin: 0;
   margin-right: 6px;
 }
@@ -63,7 +55,7 @@
   flex-shrink: 0;
   padding: 16px;
   margin: 0;
-  color: color-brand-highlight;
+  color: var(--color-brand-highlight);
   background: none;
   outline: none;
   border: none;
@@ -80,6 +72,6 @@
 
 .Hint {
   opacity: 0.5;
-  font-size: font-size-medium;
+  font-size: var(--font-size-medium);
   padding-left: 0.75em;
 }
