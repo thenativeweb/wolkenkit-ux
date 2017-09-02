@@ -1,10 +1,8 @@
-@value (
-  font-family-default
-) from '../../theme.css';
+@import '../../variables.css';
 
 .View {
   position: relative;
-  font-family: font-family-default;
+  font-family: var(--font-family-default);
 }
 
 .AdjustFlex {

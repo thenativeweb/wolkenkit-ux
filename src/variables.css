@@ -1,12 +1,13 @@
 :root {
-  /* Colors */
+  /* Brand colors */
   --color-brand-grey: #2f333b;
   --color-brand-highlight: #29abe2;
-  --color-brand-dark-grey: #363D45;
+  --color-brand-dark-grey: #363d45;
   --color-brand-mid-grey: #eee;
   --color-brand-light-grey: #f7f7f7;
   --color-brand-white: #fff;
 
+  /* Semantic colors */
   --color-content-background: var(--color-brand-white);
   --color-content-panel-light: var(--color-brand-light-grey);
   --color-content-panel-dark: var(--color-brand-dark-grey);
@@ -21,7 +22,6 @@
   --font-size-xlarge: 26px;
   --font-size-code: 15px;
   --font-size-copytext: 18px;
-
   --font-family-default: "Source Sans Pro", Arial, Helvetica, sans-serif;
   --font-family-headline: "Ubuntu", sans-serif;
   --font-family-code: "Ubuntu Mono", monospace !important;

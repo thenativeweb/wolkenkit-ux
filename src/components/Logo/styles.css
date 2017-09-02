@@ -1,9 +1,9 @@
 @import '../../variables.css';
 
 @keyframes move-cloud {
-  0% { transform: translate3d(0px, 0, 0) }
-  50% { transform: translate3d(83px, 5px, 0) }
-  100% { transform: translate3d(166px, 0, 0) }
+  0% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(83px, 5px, 0); }
+  100% { transform: translate3d(166px, 0, 0); }
 }
 
 .Logo {
