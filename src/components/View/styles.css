@@ -1,10 +1,8 @@
-@value (
-  font-family-default
-) from '../../theme.css';
+@import '../../variables.css';
 
 .View {
   position: relative;
-  font-family: font-family-default;
+  font-family: var(--font-family-default);
 }
 
 .AdjustFlex {
@@ -24,7 +22,6 @@
   height: 100%;
   display: flex;
   flex-direction: row;
-  overflow: hidden;
   align-items: center;
   justify-content: center;
 }
@@ -34,7 +31,6 @@
   height: 100%;
   display: flex;
   flex-direction: row;
-  overflow: hidden;
 }
 
 .OrientationVertical {
@@ -42,7 +38,6 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 
 .AlignItemsCenter {
@@ -51,4 +46,12 @@
 
 .JustifyContentCenter {
   justify-content: center;
+}
+
+.ScrollableNone {
+  overflow: hidden;
+}
+
+.ScrollableAuto {
+  overflow: auto;
 }

@@ -14,6 +14,7 @@ roboter.
     });
 
     task('universal/shell', {
+      'analyze-styles': [ './node_modules/.bin/stylelint "src/**/*.css"' ],
       styleguide: [ './node_modules/.bin/styleguidist server' ],
       build: [ 'NODE_ENV=production ./node_modules/.bin/webpack' ]
     });

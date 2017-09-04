@@ -1,20 +1,17 @@
-@value (
-  color-brand-grey,
-  device-tablet
-) from '../../theme.css';
+@import '../../variables.css';
 
 @keyframes move-cloud {
-  0% { transform: translate3d(0px, 0, 0) }
-  50% { transform: translate3d(83px, 5px, 0) }
-  100% { transform: translate3d(166px, 0, 0) }
+  0% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(83px, 5px, 0); }
+  100% { transform: translate3d(166px, 0, 0); }
 }
 
 .Logo {
-  & .box {
-    fill: color-brand-grey;
+  & .Box {
+    fill: var(--color-brand-grey);
   }
 
-  & .movingCloud1 {
+  & .MovingCloud1 {
     animation-name: move-cloud;
     animation-duration: 50s;
     animation-timing-function: linear;
@@ -22,10 +19,10 @@
     animation-fill-mode: both;
     opacity: 0.9;
     transform: translate3d(0, 0, 0);
-    willChange: transform;
+    will-change: transform;
   }
 
-  & .movingCloud2 {
+  & .MovingCloud2 {
     animation-name: move-cloud;
     animation-duration: 30s;
     animation-timing-function: linear;
@@ -47,7 +44,7 @@
   height: 220px;
 }
 
-@media only screen and (max-width: device-tablet) {
+@media (--device-tablet) {
   .SizeL {
     width: 100px;
     height: 100px;

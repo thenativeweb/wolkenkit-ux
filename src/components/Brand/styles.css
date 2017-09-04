@@ -1,13 +1,4 @@
-@value (
-  color-brand-white,
-  color-brand-grey,
-  color-brand-highlight,
-  device-tablet,
-  font-family-headline,
-  font-size-large,
-  font-size-medium,
-  font-size-xlarge
-) from '../../theme.css';
+@import '../../variables.css';
 
 .Brand {
   display: flex;
@@ -15,21 +6,21 @@
   overflow: hidden;
   align-items: center;
   justify-content: center;
-  font-family: font-family-headline;
-  background: color-brand-grey;
+  font-family: var(--font-family-headline);
+  background: var(--color-brand-grey);
 
   & .Words {
     font-weight: 500;
-    color: color-brand-highlight;
+    color: var(--color-brand-highlight);
 
     & span {
-      color: color-brand-white;
+      color: var(--color-brand-white);
     }
   }
 
   & .Suffix {
     text-align: 'center';
-    color: color-brand-white;
+    color: var(--color-brand-white);
   }
 }
 
@@ -41,32 +32,32 @@
 
 .SizeL {
   & .Words {
-    font-size: font-size-xlarge;
+    font-size: var(--font-size-xlarge);
   }
 
   & .Suffix {
-    font-size: font-size-large
+    font-size: var(--font-size-large);
   }
 }
 
 .SizeS {
   & .Words {
-    font-size: font-size-medium;
+    font-size: var(--font-size-medium);
   }
 
   & .Suffix {
-    font-size: font-size-medium
+    font-size: var(--font-size-medium);
   }
 }
 
-@media only screen and (max-width: device-tablet) {
+@media (--device-tablet) {
   .SizeL {
     & .Words {
-      font-size: font-size-large;
+      font-size: var(--font-size-large);
     }
 
     & .Suffix {
-      font-size: font-size-medium
+      font-size: var(--font-size-medium);
     }
   }
 }

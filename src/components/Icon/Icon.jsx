@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import styles from './styles.css';
 
-const Icon = ({ color, name, size, type }) => {
+const Icon = ({ className, color, name, size, type }) => {
   const iconClassNames = classNames(styles.Icon, {
     [styles.ColorDefault]: color === 'default',
     [styles.ColorHighlight]: color === 'highlight',
+    [styles.ColorWhite]: color === 'white',
     [styles.TypeInline]: type === 'inline',
     [styles.TypeFlexAuto]: type === 'flex-auto',
     [styles.SizeXS]: size === 'xs',
@@ -14,10 +15,10 @@ const Icon = ({ color, name, size, type }) => {
     [styles.SizeM]: size === 'm',
     [styles.SizeL]: size === 'l',
     [styles.SizeXL]: size === 'xl'
-  });
+  }, className);
 
   return (
-    <svg xmlns='http://www.w3.org/2000/svg' className={ iconClassNames }>
+    <svg xmlns='http://www.w3.org/2000/svg' className={ iconClassNames } role='presentational'>
       <use xlinkHref={ `#icon-${name}` } />
     </svg>
   );
@@ -25,7 +26,7 @@ const Icon = ({ color, name, size, type }) => {
 
 Icon.propTypes = {
   name: PropTypes.string.isRequired,
-  color: PropTypes.oneOf([ 'default', 'highlight' ]),
+  color: PropTypes.oneOf([ 'default', 'highlight', 'white' ]),
   size: PropTypes.oneOf([ 'xs', 's', 'm', 'l', 'xl' ]),
   type: PropTypes.oneOf([ 'default', 'inline', 'flex-auto' ])
 };
