@@ -12,7 +12,7 @@ const Brand = ({ isCollapsed, showLogo, showWordMark, suffix, size }) => {
   });
 
   return (
-    <div className={ brandClassNames }>
+    <div className={ brandClassNames } role='presentational'>
       <Logo isVisible={ showLogo } size={ size } />
       { showWordMark ? <div className={ styles.Words }><span>wolken</span>kit</div> : null }
       <div className={ styles.Suffix }>{ suffix }</div>

@@ -1,0 +1,79 @@
+@import '../../variables.css';
+
+.Dropdown {
+  display: flex;
+  position: relative;
+}
+
+.Dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--color-brand-grey);
+  border: 1px solid var(--color-brand-grey);
+
+  & select {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    background: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    border: 0;
+    color: var(--color-brand-white);
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: var(--components-border-radius-default);
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &:last-child {
+    & select {
+      margin-right: 0;
+    }
+  }
+}
+
+.SizeDefault {
+  margin: 16px;
+  margin-left: 0;
+  font-size: var(--font-size-default);
+
+  & select {
+    padding: 7px 40px 7px 11px;
+  }
+}
+
+.SizeS {
+  font-size: var(--font-size-medium);
+  margin: 0;
+  margin-right: 6px;
+
+  & select {
+    padding: 7px 40px 7px 11px;
+  }
+}
+
+.Focused {
+  background: var(--color-brand-highlight);
+}
+
+.CollapseIcon {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  transform: rotate(90deg);
+  pointer-events: none;
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  margin-top: -8px;
+}

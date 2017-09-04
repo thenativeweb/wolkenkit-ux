@@ -17,7 +17,7 @@ const Logo = ({ isVisible, size }) => {
   });
 
   return (
-    <div className={ logoClassNames }>
+    <div className={ logoClassNames } role='presentational'>
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 220'>
         <defs>
           <clipPath id='hexa-mask'>

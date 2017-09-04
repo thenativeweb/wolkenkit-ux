@@ -14,6 +14,10 @@
   fill: var(--color-brand-highlight);
 }
 
+.ColorWhite {
+  fill: var(--color-brand-white);
+}
+
 .SizeXS {
   width: var(--icon-size-xsmall);
   height: var(--icon-size-xsmall);

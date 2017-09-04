@@ -23,3 +23,13 @@ Use this component as a basic building block to create application layouts using
   <View adjust='flex' style={{ background: 'green' }}>adjust:flex</View>
 </View>
 ```
+
+## Scrolling
+
+```js
+<View orientation='vertical' style={{ height: '40%', height: '20%'  }}>
+  <View adjust='flex' style={{ background: 'gold' }}>View(adjust: flex)</View>
+  <View style={{ background: 'orange' }}>View</View>
+  <View style={{ background: 'green' }}>View</View>
+</View>
+```
