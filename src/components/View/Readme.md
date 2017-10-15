@@ -27,9 +27,8 @@ Use this component as a basic building block to create application layouts using
 ## Scrolling
 
 ```js
-<View orientation='vertical' style={{ height: '40%', height: '20%'  }}>
-  <View adjust='flex' style={{ background: 'gold' }}>View(adjust: flex)</View>
-  <View style={{ background: 'orange' }}>View</View>
-  <View style={{ background: 'green' }}>View</View>
+<View orientation='vertical' scrollable='auto' style={{  height: '200px'  }}>
+  <View adjust='auto' style={{ height: 600, background: 'orange' }}>View</View>
+  <View adjust='auto' style={{ height: 600, background: 'orange' }}>View</View>
 </View>
 ```
